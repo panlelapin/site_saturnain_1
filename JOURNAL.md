@@ -55,6 +55,7 @@ Recherche web ciblée dans les documentations officielles Planity et PayPal pour
 - Dépôt renommé et rendu public après le push du commit amendé `ec7b067`. GitHub Pages activé avec GitHub Actions ; publication manuelle déclenchée (exécution `34486341844`). Adresse : https://panlelapin.github.io/site_saturnain_1/.
 - L’ancienne exécution Actions `34486139874`, qui affichait l’ancien nom, a été supprimée avec ses journaux pour préparer la publication ; ces journaux ne sont plus récupérables depuis Actions. Le push antérieur à l’activation de Pages avait déclenché un échec attendu (`34486295817`).
 - Contrôles locaux réussis : syntaxe JavaScript, génération des sept pages, absence de l’ancien nom dans les fichiers sources et générés hors métadonnées Git, contrôle des espaces du diff.
+- Publication confirmée : exécution `34486341844` réussie (build et deploy). Vérification HTTP des sept pages et quatre ressources : onze réponses 200, nouveau nom présent dans chaque page, ancien nom absent du contenu servi. La dernière mise à jour documentaire utilise `[skip ci]` car elle ne modifie pas le site généré.
 
 ### Publication GitHub demandée
 
