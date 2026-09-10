@@ -1,0 +1,6 @@
+{
+  "name": "saturnain",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": { "build": "node build.js", "start": "node server.js", "check": "node --check build.js && node --check assets/site.js && node --check server.js" }
+}
