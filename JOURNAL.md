@@ -52,7 +52,9 @@ Recherche web ciblée dans les documentations officielles Planity et PayPal pour
 - Remplacement dans les contenus, le brief, la documentation, les métadonnées HTML, le nom de paquet, la clé du thème et le message du serveur. Initiale du favicon remplacée par « s ».
 - Le dépôt distant est renommé `site_saturnain_1`. Le dossier local garde son emplacement pour préserver l’environnement de travail.
 - Le seul commit contenant le site est amendé, puis poussé avec `--force-with-lease` pour remplacer l’ancienne version de la branche avant de rendre le dépôt public. Le commit initial reste conservé. Les descriptions historiques de ce journal utilisent elles aussi le nouveau nom.
-- GitHub Pages doit ensuite être activé avec GitHub Actions, puis son déploiement et son URL vérifiés.
+- Dépôt renommé et rendu public après le push du commit amendé `ec7b067`. GitHub Pages activé avec GitHub Actions ; publication manuelle déclenchée (exécution `34486341844`). Adresse : https://panlelapin.github.io/site_saturnain_1/.
+- L’ancienne exécution Actions `34486139874`, qui affichait l’ancien nom, a été supprimée avec ses journaux pour préparer la publication ; ces journaux ne sont plus récupérables depuis Actions. Le push antérieur à l’activation de Pages avait déclenché un échec attendu (`34486295817`).
+- Contrôles locaux réussis : syntaxe JavaScript, génération des sept pages, absence de l’ancien nom dans les fichiers sources et générés hors métadonnées Git, contrôle des espaces du diff.
 
 ### Publication GitHub demandée
 
@@ -60,7 +62,7 @@ Recherche web ciblée dans les documentations officielles Planity et PayPal pour
 - Dépôt vérifié : `panlelapin/site_saturnain_1`, branche `main`, visibilité privée. L’authentification signalée invalide dans le sandbox fonctionne après accès réseau/keyring autorisé ; aucun changement de compte nécessaire.
 - Tentative d’activation Pages par API : refus HTTP 422, « Your current plan does not support GitHub Pages for this repository. » Pas de changement automatique de visibilité : rendre le dépôt public exposerait aussi le brief, les sources et ce journal.
 - Ajout du workflow `.github/workflows/pages.yml` : contrôle syntaxique, génération Node 22, upload de `public/`, déploiement Pages avec permissions limitées. Déclenchement sur push main et manuel. Les chemins relatifs des pages et ressources permettent l’hébergement sous `/site_saturnain_1/`.
-- Le site reste une maquette `noindex,nofollow`, conformément aux contenus encore incomplets. La publication publique du site a été demandée, mais le changement de visibilité du dépôt reste à autoriser si l’offre GitHub n’est pas modifiée.
+- À cette étape initiale, le changement de visibilité restait à autoriser ; l’autorisation a ensuite été donnée (voir Renommage ci-dessus). Le site reste une maquette `noindex,nofollow`, conformément aux contenus encore incomplets.
 
 ### Évolution — validité du bon cadeau
 

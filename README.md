@@ -27,7 +27,9 @@ Pour une ouverture directe sans serveur, ouvrir `public/index.html` après gén�
 
 ## Avant publication
 
-Le workflow `.github/workflows/pages.yml` génère et publie `public/` à chaque push sur `main`, ou sur déclenchement manuel. Activer GitHub Pages avec la source « GitHub Actions » dans les paramètres du dépôt. L’offre actuelle ne permet pas Pages sur ce dépôt privé : il faut une offre compatible ou un dépôt public avant que le déploiement puisse réussir.
+Le workflow `.github/workflows/pages.yml` génère et publie `public/` à chaque push sur `main`, ou sur déclenchement manuel. Le dépôt `panlelapin/site_saturnain_1` est public et GitHub Pages est activé avec la source « GitHub Actions ».
+
+Adresse publique : https://panlelapin.github.io/site_saturnain_1/
 
 La maquette est volontairement `noindex,nofollow` : supprimer cette balise du modèle seulement une fois les contenus validés. Elle ne constitue pas un contrôle d’accès ; utiliser un hébergement privé pour une prévisualisation confidentielle.
 
